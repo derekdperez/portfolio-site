@@ -1,0 +1,23 @@
+﻿January 29, 2026
+
+A migration from .NET Framework to ASP.NET Core should not start with excitement.
+
+It should start with inventory.
+
+What are the application boundaries. Which libraries are blocking the move. Which authentication patterns are in use. Which integrations are fragile. What deployment assumptions are hidden in the current system. Where is the code already modern enough to move cleanly. Where is it not.
+
+That early clarity matters more than the migration toolset.
+
+The best migrations are staged. Shared business logic can often be separated first. API boundaries can be cleaned up before full framework changes. Cross-cutting concerns like logging, configuration, and dependency injection can be modernized in advance. Authentication and authorization can be upgraded as part of the move.
+
+This reduces the blast radius.
+
+It also prevents one of the most common failures: carrying too much legacy structure into the new platform without fixing the reasons the old system became hard to maintain in the first place.
+
+ASP.NET Core gives teams a better foundation. Better performance. Better hosting flexibility. Better dependency management. Better long-term support.
+
+But those benefits only show up fully when the migration improves structure, not just runtime.
+
+A practical migration path is not about speed alone.
+
+It is about ending in a system that is easier to work on next year than it is today.

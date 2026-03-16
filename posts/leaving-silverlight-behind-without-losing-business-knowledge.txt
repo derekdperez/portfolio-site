@@ -1,0 +1,25 @@
+﻿February 15, 2026
+
+Silverlight is gone. The business logic built around it usually is not.
+
+That is the real challenge.
+
+The technology may be obsolete, but the workflows, validation rules, and user expectations embedded in that application still matter. A migration that ignores that knowledge usually creates a worse system, even if the new stack is technically better.
+
+So the first goal should be knowledge capture.
+
+What does the application really do. Which behaviors are essential. Which strange edge cases exist because of business rules nobody documented. Which parts frustrate users. Which parts quietly support important work that newer teams do not fully understand.
+
+Once that is clear, the migration becomes an engineering problem instead of a guessing game.
+
+The next step is to separate concerns. The old UI should not define the future architecture. Pull out business rules. Extract service logic. Understand data contracts. Identify what belongs in APIs, what belongs in the new front end, and what should be removed entirely.
+
+This is where a lot of migrations go wrong. Teams rebuild old problems in a new framework because they never stopped to ask which parts deserved to survive.
+
+A good Silverlight migration does more than replace a front end.
+
+It modernizes the behavior model. It improves maintainability. It gives the business a system that can keep evolving.
+
+The goal is not nostalgia. It is continuity with improvement.
+
+Preserve the knowledge. Replace the technology. Improve the system.

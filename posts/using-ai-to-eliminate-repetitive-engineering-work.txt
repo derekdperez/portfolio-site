@@ -1,0 +1,25 @@
+﻿February 1, 2026
+
+A lot of engineering time gets wasted on work that is necessary but repetitive.
+
+Boilerplate. Documentation. Pattern repetition. Test scaffolding. Build configuration. Code explanation. Basic scripts. Migration inventories. Refactor checklists. Log summaries. Release notes.
+
+None of this is worthless. But not all of it deserves expensive human focus.
+
+That is where AI helps.
+
+The best use of AI in engineering is not replacing thought. It is removing repetition so thought can be applied where it matters.
+
+For example, AI can draft documentation from code structure. It can generate test cases based on known patterns. It can summarize old modules to speed up analysis. It can create first-pass migration plans. It can produce structured outputs for review. It can help identify repeated refactoring opportunities.
+
+Then the engineer steps in.
+
+Review. Correct. Refine. Decide. Approve. Integrate.
+
+That loop is powerful because it moves the human away from grunt work and toward judgment.
+
+And judgment is where senior engineers create disproportionate value.
+
+Organizations that adopt AI well will not simply code faster. They will spend less time on low-value repetition and more time on architecture, quality, performance, security, and business-critical decisions.
+
+That is the real win.

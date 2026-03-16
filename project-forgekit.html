@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study | SQL Performance Optimization | Derek Perez</title>
+  <meta name="description"
+    content="Case study by Derek Perez on improving SQL Server performance and stabilizing a production enterprise platform through targeted query tuning, indexing, and structural improvements." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+
+<body class="">
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Derek Perez home">
+        <span class="brand-mark" aria-hidden="true">DP</span>
+        <span class="brand-copy">
+          <strong>Derek Perez</strong>
+          <span>Senior .NET Engineer · Modernization Specialist · AI-Augmented Developer</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="articles.html">Articles</a>
+        <a href="styleguide.html">UI System</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle color theme" data-theme-toggle>
+          <span class="theme-dot"></span>
+        </button>
+        <a class="btn btn-sm btn-secondary hide-mobile" href="#resume">Resume</a>
+        <button class="icon-btn mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu"
+          data-menu-toggle>
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <div class="container mobile-menu-inner">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="articles.html">Articles</a>
+        <a href="styleguide.html">UI System</a>
+        <a href="contact.html">Contact</a>
+        <a href="#resume">Download Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container reveal">
+        <div class="breadcrumbs"><a href="index.html">Home</a> / <a href="projects.html">Projects</a> / <span>SQL
+            Performance Optimization</span></div>
+        <p class="eyebrow" style="margin-top:1rem">Case study</p>
+        <h1>Improving SQL Server performance and stabilizing a production platform.</h1>
+        <p class="lead">A performance-focused engagement centered on reducing slow query paths, improving reliability,
+          and creating a stronger operational foundation for a business-critical enterprise system.</p>
+        <div class="badge-row">
+          <span class="badge">SQL Server</span>
+          <span class="badge">Performance Tuning</span>
+          <span class="badge">Production Stabilization</span>
+          <span class="badge">Enterprise Systems</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container case-teaser reveal">
+        <div class="card">
+          <p class="eyebrow">Overview</p>
+          <h2>Performance issues that had become business issues.</h2>
+          <p class="lead">The platform was experiencing slow data access, heavy query cost, and increasing friction in
+            everyday workflows. The goal was to identify the real bottlenecks, improve performance where it mattered
+            most, and reduce the operational drag those bottlenecks were creating.</p>
+          <div class="grid">
+            <div>
+              <strong>Challenge</strong>
+              <p class="muted">Slow queries, inefficient indexing, and growing data complexity were degrading user
+                experience and increasing system strain.</p>
+            </div>
+            <div>
+              <strong>Approach</strong>
+              <p class="muted">Use query analysis, execution plans, indexing strategy, and application-level review to
+                target the highest-cost paths first.</p>
+            </div>
+            <div>
+              <strong>Outcome</strong>
+              <p class="muted">Faster critical workflows, lower query overhead, improved reliability, and a more
+                supportable production environment.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui-shot tall">
+          <div class="alert success">
+            <strong>Result</strong>
+            <span>Better performance, less friction, and a stronger production baseline.</span>
+          </div>
+          <div class="chart" style="margin-top:1rem">
+            <div class="bar" style="height:28%"></div>
+            <div class="bar" style="height:38%"></div>
+            <div class="bar" style="height:52%"></div>
+            <div class="bar" style="height:66%"></div>
+            <div class="bar" style="height:74%"></div>
+            <div class="bar" style="height:82%"></div>
+            <div class="bar" style="height:89%"></div>
+            <div class="bar" style="height:95%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section panel">
+      <div class="container two-col reveal">
+        <div>
+          <p class="eyebrow">The challenge</p>
+          <h2>When database latency spreads through the whole business.</h2>
+          <p>The problem was not limited to one slow screen or a single report. Database inefficiencies were affecting
+            multiple workflows, creating delays for users, increasing support friction, and adding pressure to the
+            overall platform.</p>
+          <p>Performance issues like these rarely stay isolated. They affect response time, operational efficiency,
+            release confidence, and infrastructure cost all at once.</p>
+        </div>
+
+        <div class="card">
+          <h3>Key pain points</h3>
+          <ul class="footer-links">
+            <li>Slow query execution on critical paths</li>
+            <li>Indexing gaps and inefficient access patterns</li>
+            <li>Heavy database load during normal usage</li>
+            <li>Production reliability concerns</li>
+            <li>Growing maintenance overhead</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container three-col reveal">
+        <div class="card">
+          <p class="eyebrow">Step 1</p>
+          <h3>Measure the real bottlenecks</h3>
+          <p>Reviewed execution plans, query behavior, and application usage patterns to identify where performance cost
+            was highest and most frequent.</p>
+        </div>
+
+        <div class="card">
+          <p class="eyebrow">Step 2</p>
+          <h3>Tune with purpose</h3>
+          <p>Improved indexing, refactored expensive queries, and corrected data access paths that were creating
+            unnecessary overhead.</p>
+        </div>
+
+        <div class="card">
+          <p class="eyebrow">Step 3</p>
+          <h3>Stabilize production behavior</h3>
+          <p>Combined database improvements with better observability and system-level fixes so gains were visible,
+            maintainable, and safer to support.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section panel">
+      <div class="container reveal">
+        <p class="eyebrow">What improved</p>
+        <h2>Performance gains that support the whole system.</h2>
+        <div class="kpi-grid">
+          <div class="card kpi-card">
+            <strong>Faster</strong>
+            <p>Core workflows</p>
+            <p class="muted">Reduced waiting time in high-value application paths</p>
+          </div>
+
+          <div class="card kpi-card">
+            <strong>Lower</strong>
+            <p>Database strain</p>
+            <p class="muted">Better use of SQL Server resources through targeted tuning</p>
+          </div>
+
+          <div class="card kpi-card">
+            <strong>Improved</strong>
+            <p>Reliability</p>
+            <p class="muted">More predictable production behavior and fewer performance surprises</p>
+          </div>
+
+          <div class="card kpi-card">
+            <strong>Better</strong>
+            <p>Maintainability</p>
+            <p class="muted">Cleaner query paths and easier long-term support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container reveal">
+        <div class="card">
+          <p class="eyebrow">Takeaway</p>
+          <h2>Performance work is business improvement work.</h2>
+          <p class="lead">A well-tuned system does more than run faster. It reduces operational drag, improves team
+            efficiency, and creates a more stable platform for future growth.</p>
+          <a class="btn btn-primary" href="contact.html">Discuss a performance optimization project</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <section class="resume-banner panel" id="resume">
+    <div class="container resume-inner">
+      <div>
+        <p class="eyebrow">Resume</p>
+        <h2>Need the concise version?</h2>
+        <p class="muted">Download a summary of experience, technical expertise, and enterprise engineering work.</p>
+      </div>
+      <a class="btn btn-primary" href="#" aria-label="Download Derek Perez resume PDF">Download Resume</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Derek Perez</h3>
+        <p class="muted">Senior .NET engineer specializing in legacy modernization, performance optimization, scalable
+          architecture, and AI-augmented software delivery.</p>
+        <p class="footer-note">Built as a static portfolio and consulting showcase.</p>
+      </div>
+
+      <div>
+        <h4>Navigate</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:derekdperez.dev@gmail.com">derekdperez.dev@gmail.com</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Resume PDF</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Location</h4>
+        <p class="muted">Florence, Massachusetts<br />Available for remote consulting and contract engineering.</p>
+        <div class="badge-row">
+          <span class="badge">Remote Friendly</span>
+          <span class="badge">UTC -5</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Derek Perez. All rights reserved.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>↑</button>
+  <div class="toast" aria-live="polite" data-toast hidden>Preview opened</div>
+  <script src="assets/app.js" defer></script>
+</body>
+
+</html>

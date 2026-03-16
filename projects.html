@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Derek Perez</title>
+  <meta name="description"
+    content="Selected projects and case studies by Derek Perez, focused on .NET modernization, enterprise architecture, performance optimization, and AI-augmented software delivery." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+
+<body class="">
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Derek Perez home">
+        <span class="brand-mark" aria-hidden="true">DP</span>
+        <span class="brand-copy">
+          <strong>Derek Perez</strong>
+          <span>Senior .NET Engineer - Modernization Specialist - AI-Augmented Developer</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="articles.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle color theme" data-theme-toggle>
+          <span class="theme-dot"></span>
+        </button>
+        <a class="btn btn-sm btn-secondary hide-mobile" href="#resume">Resume</a>
+        <button class="icon-btn mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu"
+          data-menu-toggle>
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <div class="container mobile-menu-inner">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="articles.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="#resume">Download Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="eyebrow">Projects</p>
+        <h1>Selected work across modernization, enterprise architecture, platform refactoring, and performance
+          improvement.</h1>
+        <p class="lead">A portfolio index built to show the kinds of systems I help organizations upgrade, stabilize,
+          and accelerate.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container reveal">
+        <div class="highlight-row">
+          <div class="card">
+            <p class="eyebrow">Featured highlight</p>
+            <h2>AI-Augmented Engineering Workflow</h2>
+            <p>A practical development workflow that combines deep engineering judgment with AI and automation to
+              dramatically increase delivery speed, reduce repetitive effort, and produce more production-ready output.
+            </p>
+            <div class="badge-row">
+              <span class="badge">AI Automation</span>
+              <span class="badge">Developer Productivity</span>
+              <span class="badge">Execution Speed</span>
+            </div>
+          </div>
+          <div class="ui-shot">
+            <div class="alert success"><strong>Outcome</strong><span>Faster delivery, less waste, and more engineering
+                output from a single senior contributor.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section panel">
+      <div class="container reveal">
+        <div class="toolbar">
+          <div class="filter-bar" data-filter-group>
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="modernization">Modernization</button>
+            <button class="chip" data-filter="architecture">Architecture</button>
+            <button class="chip" data-filter="performance">Performance</button>
+            <button class="chip" data-filter="automation">Automation</button>
+            <button class="chip" data-filter="enterprise">Enterprise</button>
+            <button class="chip" data-filter="apis">APIs</button>
+          </div>
+          <div class="toggle-group">
+            <button class="chip active">Grid</button>
+            <button class="chip">List</button>
+            <button class="chip">Sort: Impact</button>
+          </div>
+        </div>
+
+        <div class="toolbar" style="margin-top:1rem">
+          <div class="search-wrap">
+            <label for="project-search">Search projects</label>
+            <input id="project-search" class="input" data-project-search type="search"
+              placeholder="Search by project name, category, stack, or outcome" />
+          </div>
+        </div>
+
+        <div class="project-grid" style="margin-top:1.2rem">
+
+          <article class="card project-card" data-project-card data-category="modernization">
+            <div class="project-visual">
+              <div class="mock-ui"></div>
+            </div>
+            <div class="meta-row">
+              <span class="badge">Legacy .NET Upgrade</span>
+              <span class="badge">Modernization</span>
+            </div>
+            <h3>ASP.NET MVC to ASP.NET Core Migration</h3>
+            <p class="muted">Modernized a legacy Microsoft-stack application to improve maintainability, deployment
+              flexibility, and long-term supportability.</p>
+            <div class="metric-row">
+              <span>C# - ASP.NET Core - Refactoring</span>
+              <span>modernization</span>
+            </div>
+            <div class="meta-row">
+              <a class="btn btn-primary btn-sm" href="project-pulseops.html">Case study</a>
+              <button class="btn btn-ghost btn-sm" type="button" data-modal-trigger>Preview</button>
+            </div>
+          </article>
+
+          <article class="card project-card" data-project-card data-category="apis">
+            <div class="project-visual">
+              <div class="mock-ui"></div>
+            </div>
+            <div class="meta-row">
+              <span class="badge">Integration Upgrade</span>
+              <span class="badge">APIs</span>
+            </div>
+            <h3>WCF to REST API Modernization</h3>
+            <p class="muted">Replaced aging service integrations with RESTful APIs to simplify communication, improve
+              scalability, and reduce maintenance overhead.</p>
+            <div class="metric-row">
+              <span>REST - WCF - Service Design</span>
+              <span>apis</span>
+            </div>
+            <div class="meta-row">
+              <a class="btn btn-primary btn-sm" href="project-cartloom.html">Case study</a>
+              <button class="btn btn-ghost btn-sm" type="button" data-modal-trigger>Preview</button>
+            </div>
+          </article>
+
+          <article class="card project-card" data-project-card data-category="performance">
+            <div class="project-visual">
+              <div class="mock-ui"></div>
+            </div>
+            <div class="meta-row">
+              <span class="badge">Database Turnaround</span>
+              <span class="badge">Performance</span>
+            </div>
+            <h3>SQL Server Performance Optimization</h3>
+            <p class="muted">Improved application performance through indexing, query refactoring, and execution plan
+              analysis in high-value production systems.</p>
+            <div class="metric-row">
+              <span>SQL Server - T-SQL - Query Tuning</span>
+              <span>performance</span>
+            </div>
+            <div class="meta-row">
+              <a class="btn btn-primary btn-sm" href="project-forgekit.html">Case study</a>
+              <button class="btn btn-ghost btn-sm" type="button" data-modal-trigger>Preview</button>
+            </div>
+          </article>
+
+          <article class="card project-card" data-project-card data-category="architecture">
+            <div class="project-visual">
+              <div class="mock-ui"></div>
+            </div>
+            <div class="meta-row">
+              <span class="badge">Monolith Refactor</span>
+              <span class="badge">Architecture</span>
+            </div>
+            <h3>Enterprise Platform Refactoring</h3>
+            <p class="muted">Transformed a tightly coupled application into cleaner, modular components that were easier
+              to extend, support, and deploy.</p>
+            <div class="metric-row">
+              <span>Architecture - Services - Maintainability</span>
+              <span>architecture</span>
+            </div>
+            <div class="meta-row">
+              <a class="btn btn-primary btn-sm" href="#">Case study</a>
+              <button class="btn btn-ghost btn-sm" type="button" data-modal-trigger>Preview</button>
+            </div>
+          </article>
+
+          <article class="card project-card" data-project-card data-category="enterprise">
+            <div class="project-visual">
+              <div class="mock-ui"></div>
+            </div>
+            <div class="meta-row">
+              <span class="badge">Stabilization</span>
+              <span class="badge">Enterprise</span>
+            </div>
+            <h3>Production Defect Remediation</h3>
+            <p class="muted">Stabilized enterprise systems by identifying root causes, improving logging, and resolving
+              persistent defects affecting business operations.</p>
+            <div class="metric-row">
+              <span>Observability - Reliability - Support</span>
+              <span>enterprise</span>
+            </div>
+            <div class="meta-row">
+              <a class="btn btn-primary btn-sm" href="#">Case study</a>
+              <button class="btn btn-ghost btn-sm" type="button" data-modal-trigger>Preview</button>
+            </div>
+          </article>
+
+          <article class="card project-card" data-project-card data-category="automation">
+            <div class="project-visual">
+              <div class="mock-ui"></div>
+            </div>
+            <div class="meta-row">
+              <span class="badge">AI Workflow</span>
+              <span class="badge">Automation</span>
+            </div>
+            <h3>AI-Augmented Software Delivery</h3>
+            <p class="muted">Applied AI and automation to increase engineering output, reduce manual effort, and
+              accelerate production-ready delivery far beyond conventional workflows.</p>
+            <div class="metric-row">
+              <span>AI - Automation - Output Multiplication</span>
+              <span>automation</span>
+            </div>
+            <div class="meta-row">
+              <a class="btn btn-primary btn-sm" href="#">Case study</a>
+              <button class="btn btn-ghost btn-sm" type="button" data-modal-trigger>Preview</button>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="empty-state" data-empty-state hidden>No projects match the current filters. Try a broader category
+          or search term.</div>
+
+        <div class="section" style="padding-bottom:0">
+          <div class="three-col">
+            <div class="skeleton"></div>
+            <div class="skeleton"></div>
+            <div class="skeleton"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="resume-banner panel" id="resume">
+    <div class="container resume-inner">
+      <div>
+        <p class="eyebrow">Resume</p>
+        <h2>Need the concise version?</h2>
+        <p class="muted">Download a summary of experience, technical expertise, and enterprise engineering work.</p>
+      </div>
+      <a class="btn btn-primary" href="#" aria-label="Download Derek Perez resume PDF">Download Resume</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Derek Perez</h3>
+        <p class="muted">Senior .NET engineer specializing in legacy modernization, performance optimization, and
+          scalable enterprise architecture.</p>
+        <p class="footer-note">20+ years building production software systems.</p>
+      </div>
+
+      <div>
+        <h4>Navigate</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="articles.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:derekdperez.dev@gmail.com">derekdperez.dev@gmail.com</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Resume PDF</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Location</h4>
+        <p class="muted">Florence, Massachusetts<br />Available for remote consulting and contract engineering.</p>
+        <div class="badge-row">
+          <span class="badge">Remote Friendly</span>
+          <span class="badge">UTC -5</span>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>Ã‚Â© 2026 Derek Perez. All rights reserved.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>Ã¢â€ â€˜</button>
+  <div class="toast" aria-live="polite" data-toast hidden>Preview opened</div>
+  <script src="assets/app.js" defer></script>
+</body>
+
+</html>

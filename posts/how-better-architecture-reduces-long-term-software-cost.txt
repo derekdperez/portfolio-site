@@ -1,0 +1,23 @@
+﻿January 18, 2026
+
+A lot of software cost is hidden.
+
+It does not show up as a dramatic outage. It shows up as slower changes. Riskier deployments. Longer onboarding. More bugs from unrelated updates. Harder testing. Repeated work. Support burden. Team hesitation.
+
+That hidden cost is usually architectural.
+
+When system boundaries are unclear, every change gets more expensive. When responsibilities are mixed together, debugging takes longer. When integrations are tangled, upgrades become harder. When the design encourages repetition, the maintenance bill keeps growing.
+
+Better architecture does the opposite.
+
+It lowers the cost of future work.
+
+That is the real ROI.
+
+A cleaner boundary today means a safer change next month. Better separation of concerns means a new feature lands faster. More predictable data access means fewer performance surprises. Simpler deployment paths reduce operational effort. Better modularity cuts the cost of experimentation and improvement.
+
+The best architecture work is not abstract. It produces business leverage.
+
+It makes the software cheaper to change, cheaper to support, and less likely to create emergencies.
+
+That is why architecture is not a nice-to-have. It is part of cost control.

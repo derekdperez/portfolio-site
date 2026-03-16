@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study | WCF to REST Modernization | Derek Perez</title>
+  <meta name="description"
+    content="Case study by Derek Perez on modernizing legacy WCF services into REST APIs to improve scalability, maintainability, and integration reliability." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+
+<body class="">
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Derek Perez home">
+        <span class="brand-mark" aria-hidden="true">DP</span>
+        <span class="brand-copy">
+          <strong>Derek Perez</strong>
+          <span>Senior .NET Engineer · Modernization Specialist · AI-Augmented Developer</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="articles.html">Articles</a>
+        <a href="styleguide.html">UI System</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle color theme" data-theme-toggle>
+          <span class="theme-dot"></span>
+        </button>
+        <a class="btn btn-sm btn-secondary hide-mobile" href="#resume">Resume</a>
+        <button class="icon-btn mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu"
+          data-menu-toggle>
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <div class="container mobile-menu-inner">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="articles.html">Articles</a>
+        <a href="styleguide.html">UI System</a>
+        <a href="contact.html">Contact</a>
+        <a href="#resume">Download Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container reveal">
+        <div class="breadcrumbs"><a href="index.html">Home</a> / <a href="projects.html">Projects</a> / <span>API
+            Modernization</span></div>
+        <p class="eyebrow" style="margin-top:1rem">Case study</p>
+        <h1>Replacing legacy WCF services with modern REST APIs.</h1>
+        <p class="lead">A modernization effort focused on improving system reliability, simplifying integrations, and
+          creating a scalable service architecture without interrupting production operations.</p>
+
+        <div class="badge-row">
+          <span class="badge">WCF</span>
+          <span class="badge">REST APIs</span>
+          <span class="badge">Integration Modernization</span>
+          <span class="badge">Service Architecture</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container case-teaser reveal">
+        <div class="card">
+          <p class="eyebrow">Overview</p>
+          <h2>Modern service architecture for a growing platform.</h2>
+
+          <p class="lead">
+            The platform relied heavily on legacy WCF services that had become increasingly difficult to maintain and
+            integrate with newer systems.
+          </p>
+
+          <div class="grid">
+            <div>
+              <strong>Challenge</strong>
+              <p class="muted">
+                Aging SOAP-based services created integration complexity, inconsistent error handling, and limited
+                scalability for new applications.
+              </p>
+            </div>
+
+            <div>
+              <strong>Approach</strong>
+              <p class="muted">
+                Introduced RESTful APIs alongside existing services, gradually shifting integrations while simplifying
+                service boundaries.
+              </p>
+            </div>
+
+            <div>
+              <strong>Outcome</strong>
+              <p class="muted">
+                A cleaner API layer that improved reliability, simplified development, and made future integrations
+                significantly easier.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui-shot tall">
+          <div class="alert info">
+            <strong>Result</strong>
+            <span>Modern integration architecture with reduced complexity and improved service reliability.</span>
+          </div>
+
+          <div class="chart" style="margin-top:1rem">
+            <div class="bar" style="height:25%"></div>
+            <div class="bar" style="height:40%"></div>
+            <div class="bar" style="height:55%"></div>
+            <div class="bar" style="height:70%"></div>
+            <div class="bar" style="height:80%"></div>
+            <div class="bar" style="height:88%"></div>
+            <div class="bar" style="height:92%"></div>
+            <div class="bar" style="height:96%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section panel">
+      <div class="container two-col reveal">
+
+        <div>
+          <p class="eyebrow">The challenge</p>
+          <h2>Legacy services limiting system evolution.</h2>
+
+          <p>
+            The existing system relied on multiple WCF services built over many years.
+          </p>
+
+          <p>
+            These services were tightly coupled to older clients and difficult to evolve without breaking integrations.
+          </p>
+
+          <p>
+            Debugging and error handling were inconsistent, and newer systems struggled to consume the SOAP-based
+            interfaces.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Key risks</h3>
+          <ul class="footer-links">
+            <li>Complex SOAP integrations</li>
+            <li>Fragile service dependencies</li>
+            <li>Limited scalability</li>
+            <li>Difficult debugging and monitoring</li>
+            <li>High maintenance overhead</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+
+      <div class="container three-col reveal">
+
+        <div class="card">
+          <p class="eyebrow">Step 1</p>
+          <h3>Analyze integrations</h3>
+          <p>
+            Mapped existing service consumers and identified high-risk dependencies before introducing changes.
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="eyebrow">Step 2</p>
+          <h3>Create REST endpoints</h3>
+          <p>
+            Implemented modern REST APIs with clearer contracts, improved error handling, and simplified data models.
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="eyebrow">Step 3</p>
+          <h3>Gradual migration</h3>
+          <p>
+            Migrated service consumers incrementally while maintaining full backward compatibility during the
+            transition.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section panel">
+      <div class="container reveal">
+
+        <p class="eyebrow">Results</p>
+        <h2>Improved reliability and integration flexibility.</h2>
+
+        <div class="kpi-grid">
+
+          <div class="card kpi-card">
+            <strong>Simpler</strong>
+            <p>API contracts</p>
+            <p class="muted">Cleaner REST interfaces replacing complex SOAP messages</p>
+          </div>
+
+          <div class="card kpi-card">
+            <strong>Better</strong>
+            <p>Scalability</p>
+            <p class="muted">Services designed for modern distributed systems</p>
+          </div>
+
+          <div class="card kpi-card">
+            <strong>Improved</strong>
+            <p>Observability</p>
+            <p class="muted">Better logging and error visibility</p>
+          </div>
+
+          <div class="card kpi-card">
+            <strong>Lower</strong>
+            <p>Maintenance cost</p>
+            <p class="muted">Reduced complexity across integrations</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container reveal">
+
+        <div class="card">
+
+          <p class="eyebrow">Takeaway</p>
+          <h2>Modern APIs reduce friction across the entire system.</h2>
+
+          <p class="lead">
+            Replacing legacy service technology is rarely just about technology. It is about making the system easier to
+            evolve and safer to operate.
+          </p>
+
+          <a class="btn btn-primary" href="contact.html">Discuss an integration modernization project</a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <section class="resume-banner panel" id="resume">
+    <div class="container resume-inner">
+      <div>
+        <p class="eyebrow">Resume</p>
+        <h2>Need the concise version?</h2>
+        <p class="muted">Download a summary of experience, technical expertise, and enterprise engineering work.</p>
+      </div>
+      <a class="btn btn-primary" href="#" aria-label="Download Derek Perez resume PDF">Download Resume</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div>
+        <h3>Derek Perez</h3>
+        <p class="muted">Senior .NET engineer specializing in legacy modernization, performance optimization, scalable
+          architecture, and AI-augmented software delivery.</p>
+        <p class="footer-note">Built as a static portfolio and consulting showcase.</p>
+      </div>
+
+      <div>
+        <h4>Navigate</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:derekdperez.dev@gmail.com">derekdperez.dev@gmail.com</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Resume PDF</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Location</h4>
+        <p class="muted">Florence, Massachusetts<br />Available for remote consulting and contract engineering.</p>
+        <div class="badge-row">
+          <span class="badge">Remote Friendly</span>
+          <span class="badge">UTC -5</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Derek Perez. All rights reserved.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>↑</button>
+  <div class="toast" aria-live="polite" data-toast hidden>Preview opened</div>
+  <script src="assets/app.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study | Legacy .NET Modernization | Derek Perez</title>
+  <meta name="description" content="Case study by Derek Perez on modernizing a legacy ASP.NET MVC application into a more maintainable ASP.NET Core platform." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="">
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Derek Perez home">
+      <span class="brand-mark" aria-hidden="true">DP</span>
+      <span class="brand-copy">
+        <strong>Derek Perez</strong>
+        <span>Senior .NET Engineer · Modernization Specialist · AI-Augmented Developer</span>
+      </span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="articles.html">Articles</a>
+      <a href="styleguide.html">UI System</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Toggle color theme" data-theme-toggle>
+        <span class="theme-dot"></span>
+      </button>
+      <a class="btn btn-sm btn-secondary hide-mobile" href="#resume">Resume</a>
+      <button class="icon-btn mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <div class="container mobile-menu-inner">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="articles.html">Articles</a>
+      <a href="styleguide.html">UI System</a>
+      <a href="contact.html">Contact</a>
+      <a href="#resume">Download Resume</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container reveal">
+      <div class="breadcrumbs"><a href="index.html">Home</a> / <a href="projects.html">Projects</a> / <span>Legacy .NET Modernization</span></div>
+      <p class="eyebrow" style="margin-top:1rem">Case study</p>
+      <h1>Modernizing a legacy ASP.NET MVC application into a cleaner, more maintainable platform.</h1>
+      <p class="lead">A staged modernization effort focused on reducing technical debt, improving deployment flexibility, and creating a safer long-term path forward without disrupting business operations.</p>
+      <div class="badge-row">
+        <span class="badge">ASP.NET MVC</span>
+        <span class="badge">ASP.NET Core</span>
+        <span class="badge">Modernization</span>
+        <span class="badge">Architecture Refactoring</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container case-teaser reveal">
+      <div class="card">
+        <p class="eyebrow">Overview</p>
+        <h2>From aging framework constraints to a modern delivery path.</h2>
+        <p class="lead">The application had grown difficult to maintain. Deployment was rigid. Technical debt was accumulating. New changes were becoming slower and riskier. The goal was not a risky rewrite. It was controlled modernization.</p>
+        <div class="grid">
+          <div><strong>Challenge</strong><p class="muted">A legacy ASP.NET MVC application with older patterns, growing maintenance cost, and increasing friction around new development and deployment.</p></div>
+          <div><strong>Approach</strong><p class="muted">Identify modernization seams, separate core concerns, and migrate incrementally toward ASP.NET Core while improving architecture and maintainability.</p></div>
+          <div><strong>Outcome</strong><p class="muted">A cleaner codebase, improved deployment flexibility, reduced structural friction, and a stronger foundation for future work.</p></div>
+        </div>
+      </div>
+      <div class="ui-shot tall">
+        <div class="alert success"><strong>Result</strong><span>Safer upgrades, cleaner structure, and a more sustainable platform.</span></div>
+        <div class="chart" style="margin-top:1rem">
+          <div class="bar" style="height:30%"></div>
+          <div class="bar" style="height:45%"></div>
+          <div class="bar" style="height:60%"></div>
+          <div class="bar" style="height:70%"></div>
+          <div class="bar" style="height:78%"></div>
+          <div class="bar" style="height:84%"></div>
+          <div class="bar" style="height:88%"></div>
+          <div class="bar" style="height:94%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section panel">
+    <div class="container two-col reveal">
+      <div>
+        <p class="eyebrow">The problem</p>
+        <h2>Legacy software that still mattered every day.</h2>
+        <p>The system was actively used and business-critical. That meant the team could not afford a long rewrite cycle or a disruptive cutover. But staying in place meant rising maintenance cost, slower delivery, and growing technical risk.</p>
+        <p>The challenge was to improve the system while it continued serving the business. That required small, controlled changes with clear boundaries and real operational awareness.</p>
+      </div>
+      <div class="card">
+        <h3>Key constraints</h3>
+        <ul class="footer-links">
+          <li>Active production usage</li>
+          <li>Legacy framework dependencies</li>
+          <li>Business continuity requirements</li>
+          <li>Need for staged migration</li>
+          <li>Maintainability concerns</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container three-col reveal">
+      <div class="card">
+        <p class="eyebrow">Step 1</p>
+        <h3>Assess and map</h3>
+        <p>Inventory application boundaries, risky dependencies, deployment assumptions, and structural pain points before touching the core system.</p>
+      </div>
+      <div class="card">
+        <p class="eyebrow">Step 2</p>
+        <h3>Refactor for movement</h3>
+        <p>Separate concerns, reduce coupling, and create cleaner seams so modernization work could happen without destabilizing the application.</p>
+      </div>
+      <div class="card">
+        <p class="eyebrow">Step 3</p>
+        <h3>Migrate incrementally</h3>
+        <p>Move toward ASP.NET Core in controlled slices that improved the codebase immediately while lowering future migration effort.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section panel">
+    <div class="container reveal">
+      <p class="eyebrow">What improved</p>
+      <h2>Benefits that compound over time.</h2>
+      <div class="kpi-grid">
+        <div class="card kpi-card">
+          <strong>Cleaner</strong>
+          <p>Architecture</p>
+          <p class="muted">Reduced coupling and clearer boundaries</p>
+        </div>
+        <div class="card kpi-card">
+          <strong>Safer</strong>
+          <p>Delivery path</p>
+          <p class="muted">Smaller modernization risk with staged execution</p>
+        </div>
+        <div class="card kpi-card">
+          <strong>Better</strong>
+          <p>Maintainability</p>
+          <p class="muted">Easier future changes and reduced friction</p>
+        </div>
+        <div class="card kpi-card">
+          <strong>Modern</strong>
+          <p>Foundation</p>
+          <p class="muted">Stronger path for ongoing upgrades</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container reveal">
+      <div class="card">
+        <p class="eyebrow">Takeaway</p>
+        <h2>Modernization works best when it is disciplined, not dramatic.</h2>
+        <p class="lead">The goal was not to impress with a rewrite. It was to create a safer, stronger system that the business could rely on while opening a practical path to the future.</p>
+        <a class="btn btn-primary" href="contact.html">Discuss a modernization project</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section class="resume-banner panel" id="resume">
+  <div class="container resume-inner">
+    <div>
+      <p class="eyebrow">Resume</p>
+      <h2>Need the concise version?</h2>
+      <p class="muted">Download a summary of experience, technical expertise, and enterprise engineering work.</p>
+    </div>
+    <a class="btn btn-primary" href="#" aria-label="Download Derek Perez resume PDF">Download Resume</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Derek Perez</h3>
+      <p class="muted">Senior .NET engineer specializing in legacy modernization, performance optimization, scalable architecture, and AI-augmented software delivery.</p>
+      <p class="footer-note">Built as a static portfolio and consulting showcase.</p>
+    </div>
+
+    <div>
+      <h4>Navigate</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Connect</h4>
+      <ul class="footer-links">
+        <li><a href="mailto:derekdperez.dev@gmail.com">derekdperez.dev@gmail.com</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Resume PDF</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Location</h4>
+      <p class="muted">Florence, Massachusetts<br />Available for remote consulting and contract engineering.</p>
+      <div class="badge-row">
+        <span class="badge">Remote Friendly</span>
+        <span class="badge">UTC -5</span>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Derek Perez. All rights reserved.</p>
+    <a href="#top">Back to top</a>
+  </div>
+</footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>↑</button>
+  <div class="toast" aria-live="polite" data-toast hidden>Preview opened</div>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
